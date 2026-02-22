@@ -71,7 +71,7 @@ class KNearestNeighbors:
 
 # Algorythm 3 Multi Layer Perceptron: A calssical neural network that trains x ammount of perceprtons over y epochs then predicts based on activated trained features
 class MultiLayerPerceptron:
-  def __init__(self, hidden_neurons=100, epochs=30, learning_rate=0.1, random_seed=42):
+  def __init__(self, hidden_neurons=150, epochs=50, learning_rate=0.1, random_seed=42):
       self.hidden_neurons = hidden_neurons
       self.epochs = epochs
       self.learning_rate = learning_rate

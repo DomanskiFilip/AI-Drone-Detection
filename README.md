@@ -48,13 +48,33 @@ Before running this project, ensure you have:
    - **Name:** `KAGGLE_KEY` | **Value:** Your Kaggle API key
 4. Toggle notebook access ON for both secrets
 
-### 3. Run the Notebook
+### 3.1. Run the Notebook (OPTION 1)
 
 Execute the cells in order to:
 - Configure Kaggle authentication
 - Download datasets
 - Process images
 - Visualize samples
+- 
+### 3.2. Run the python project files (OPTION 2)
+- Clone the repository to your local machine:
+```bash
+git clone
+cd ai-bird-plane-drone
+```
+- Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+- Run the main script:
+```bash
+ python main.py
+ ```
+- Run visualization script:
+```bash
+ python visualize.py
+ ```
+
 
 ## Dataset
 
