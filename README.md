@@ -50,12 +50,8 @@ Before running this project, ensure you have:
 
 ### 3.1. Run the Notebook (OPTION 1)
 
-Execute the cells in order to:
-- Configure Kaggle authentication
-- Download datasets
-- Process images
-- Visualize samples
-- 
+Execute the cells in order 
+
 ### 3.2. Run the python project files (OPTION 2)
 - Clone the repository to your local machine:
 ```bash
