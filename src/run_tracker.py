@@ -6,7 +6,7 @@ from datetime import datetime
 RESULTS_FILE = "run_history.csv"
 
 def save_run(results: dict, notes: str = ""):
-    """Append a single model evaluation result to the CSV history."""
+    #Append a single model evaluation result to the CSV history
     # Flatten the confusion matrix to a JSON string so it fits in one cell
     row = {key: value for key, value in results.items() if key != "confusion_matrix"}
     row["confusion_matrix"] = json.dumps(results.get("confusion_matrix", []))
@@ -25,7 +25,7 @@ def save_run(results: dict, notes: str = ""):
     print(f"Run saved to {RESULTS_FILE}")
 
 def load_runs() -> pandas.DataFrame:
-    """Load all historical runs into a DataFrame."""
+    # Load all historical runs into a DataFrame
     if not os.path.exists(RESULTS_FILE):
         print("No run history found.")
         return pandas.DataFrame()

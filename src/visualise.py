@@ -7,7 +7,7 @@ import numpy
 from run_tracker import load_runs
 
 def plot_metrics_over_runs(df: pandas.DataFrame):
-    """Line plot of key metrics across runs, grouped by model."""
+    # Line plot of key metrics across runs, grouped by model
     metrics = ["accuracy", "precision", "recall", "f1", "rmse", "r2"]
     fig, axes = plt.subplots(2, 3, figsize=(16, 10))
     fig.suptitle("Model Metrics Across Runs", fontsize=16, fontweight="bold")
@@ -32,7 +32,7 @@ def plot_metrics_over_runs(df: pandas.DataFrame):
 
 
 def plot_model_comparison(df: pandas.DataFrame):
-    """Bar chart comparing latest run metrics per model."""
+    # Bar chart comparing latest run metrics per model
     # Take the most recent run per model
     latest = df.sort_values("timestamp").groupby("model").last().reset_index()
 
@@ -60,7 +60,7 @@ def plot_model_comparison(df: pandas.DataFrame):
 
 
 def plot_confusion_matrices(df: pandas.DataFrame, class_names: list):
-    """Plot confusion matrices for the most recent run of each model."""
+    # Plot confusion matrices for the most recent run of each model
     latest = df.sort_values("timestamp").groupby("model").last().reset_index()
     n_models = len(latest)
 
@@ -89,7 +89,7 @@ def plot_confusion_matrices(df: pandas.DataFrame, class_names: list):
 
 
 def plot_error_metrics(df: pandas.DataFrame):
-    """Box plot of error metrics (MAE, RMSE) distribution per model across all runs."""
+    # Box plot of error metrics (MAE, RMSE) distribution per model across all runs
     melted = df.melt(
         id_vars="model",
         value_vars=["mae", "rmse"],
@@ -106,12 +106,12 @@ def plot_error_metrics(df: pandas.DataFrame):
 
 
 if __name__ == "__main__":
-    df = load_runs()
-    if df.empty:
+    dataFrame = load_runs()
+    if dataFrame.empty:
         print("Run some experiments first!")
     else:
         class_names = ["Birds", "Drones", "Aeroplanes"]
-        plot_metrics_over_runs(df)
-        plot_model_comparison(df)
-        plot_confusion_matrices(df, class_names)
-        plot_error_metrics(df)
+        plot_metrics_over_runs(dataFrame)
+        plot_model_comparison(dataFrame)
+        plot_confusion_matrices(dataFrame, class_names)
+        plot_error_metrics(dataFrame)
