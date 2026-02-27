@@ -55,8 +55,8 @@ Execute the cells in order
 ### 3.2. Run the python project files (OPTION 2)
 - Clone the repository to your local machine:
 ```bash
-git clone
-cd ai-bird-plane-drone
+git clone https://github.com/DomanskiFilip/AI-Drone-Detection.git
+cd AI-Drone-Detection
 ```
 - Install required dependencies:
 ```bash
