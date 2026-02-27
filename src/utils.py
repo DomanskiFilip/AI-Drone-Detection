@@ -8,7 +8,7 @@ from sklearn.metrics import (
 )
 import numpy
 
-def load_and_preprocess_data(base_path, categories, img_size=(64, 64)):
+def load_and_preprocess_data(base_path, categories, img_size=(256, 256)):
     data, labels = [], []
     for folder_name, label in categories.items():
         category_path = os.path.join(base_path, folder_name)
