@@ -110,6 +110,6 @@ This project uses datasets from Kaggle:
 ### Co-Authors of the ML Project
 - Filip Domanski
 - [Oliwer Galaszkiewicz](https://github.com/O-Galaszkiewicz)
-- Arash Ahangar
+- [Arash Ahangar](https://github.com/Arashang)
 
 **Note:** This project is for educational and research purposes. Ensure you comply with Kaggle's terms of service and dataset licenses when using the data.
