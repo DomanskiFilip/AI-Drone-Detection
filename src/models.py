@@ -96,26 +96,7 @@ class MultiLayerPerceptron:
         X_test_scaled = self.scaler.transform(X_test)
         return self.model.predict(X_test_scaled)
 
-
-# Algorithm 4: Principal Component Analysis (PCA)
-class PCAModel:
-    def __init__(self, n_components=0.95):
-        self.n_components = n_components
-        self.pca = PCA(n_components=n_components)
-        self.name = f"Principal Component Analysis (n_components={n_components})"
-
-    def train(self, X_train, y_train):
-        print(f"\nTraining {self.name}...")
-        self.pca.fit(X_train)
-        print(f"Reduced to {self.pca.n_components_} components")
-
-    def predict(self, X_test):
-        # PCA is an unsupervised method, so we can't directly predict classes
-        # Instead, we'll return the transformed data
-        return self.pca.transform(X_test)
-
-
-# Algorithm 5: Logistic Regression
+# Algorithm 4: Logistic Regression
 class LogisticRegressionModel:
     def __init__(
         self,
@@ -140,7 +121,7 @@ class LogisticRegressionModel:
         return self.model.predict(X_test_scaled)
 
 
-# Algorithm 6: Random Forest
+# Algorithm 5: Random Forest
 class RandomForestModel:
     def __init__(self, n_estimators, random_seed=42):
         self.n_estimators = n_estimators
@@ -159,7 +140,7 @@ class RandomForestModel:
         return self.model.predict(X_test)
 
 
-# Algorithm 7: Linear Support Vector Classifier
+# Algorithm 6: Linear Support Vector Classifier
 class LinearSVCModel:
     def __init__(self, epochs, C=1.0, random_seed=42):
         self.C = C
@@ -178,30 +159,7 @@ class LinearSVCModel:
         X_test_scaled = self.scaler.transform(X_test)
         return self.model.predict(X_test_scaled)
 
-
-# Algorithm 8: Gradient Boosting
-class GradientBoostingModel:
-    def __init__(self, n_estimators, learning_rate=0.1, random_seed=42):
-        self.n_estimators = n_estimators
-        self.learning_rate = learning_rate
-        self.random_seed = random_seed
-        self.model = GradientBoostingClassifier(
-            n_estimators=n_estimators,
-            learning_rate=learning_rate,
-            random_state=random_seed,
-        )
-        self.name = f"Gradient Boosting (n_estimators={n_estimators}, learning_rate={learning_rate})"
-
-    def train(self, X_train, y_train):
-        print(f"\nTraining {self.name}...")
-        self.model.fit(X_train, y_train)
-        print("Training complete!")
-
-    def predict(self, X_test):
-        return self.model.predict(X_test)
-
-
-# Algorithm 9: Extra Trees
+# Algorithm 7: Extra Trees
 class ExtraTreesModel:
     def __init__(self, n_estimators, random_seed=42):
         self.n_estimators = n_estimators
@@ -220,7 +178,7 @@ class ExtraTreesModel:
         return self.model.predict(X_test)
 
 
-# Algorithm 10: Gaussian Naive Bayes
+# Algorithm 8: Gaussian Naive Bayes
 class GaussianNBModel:
     def __init__(self):
         self.model = GaussianNB()
@@ -235,7 +193,7 @@ class GaussianNBModel:
         return self.model.predict(X_test)
 
 
-# Algorithm 11: Decision Tree
+# Algorithm 9: Decision Tree
 class DecisionTreeModel:
     def __init__(self, random_seed=42):
         self.random_seed = random_seed
@@ -251,7 +209,7 @@ class DecisionTreeModel:
         return self.model.predict(X_test)
 
 
-# Algorithm 12: AdaBoost
+# Algorithm 10: AdaBoost
 class AdaBoostModel:
     def __init__(self, n_estimators, random_seed=42):
         self.n_estimators = n_estimators
@@ -270,7 +228,7 @@ class AdaBoostModel:
         return self.model.predict(X_test)
 
 
-# Algorithm 13: Stochastic Gradient Descent
+# Algorithm 11: Stochastic Gradient Descent
 class SGDModel:
     def __init__(self, epochs, random_seed=42):
         self.random_seed = random_seed
@@ -289,7 +247,7 @@ class SGDModel:
         return self.model.predict(X_test_scaled)
 
 
-# Algorithm 14: Passive Aggressive
+# Algorithm 12: Passive Aggressive
 class PassiveAggressiveModel:
     def __init__(self, epochs, random_seed=42):
         self.random_seed = random_seed
