@@ -13,7 +13,7 @@ A machine learning project for classifying aerial objects into three categories:
 
 ## Overview
 
-This project processes and prepares aerial imagery data for classification tasks. It downloads datasets from Kaggle, processes images, and prepares them for machine learning model training to distinguish between birds, drones, and airplanes.
+This project processes and prepares aerial imagery data for classification tasks. It downloads datasets from Kaggle, processes images, and uses them for machine learning model training to distinguish between birds, drones, and airplanes.
 
 ## Features
 
@@ -21,6 +21,21 @@ This project processes and prepares aerial imagery data for classification tasks
 -  Image preprocessing and normalization
 -  Standardized image resizing
 -  Data visualization capabilities
+
+## Classifiers used
+
+- Euclidean Distance
+- K Nearest Neighbors
+- Multi Layer Perceptron with sigmoid activatrion and stochastic gradient Descrent
+- Logistic Regression
+- Random Forest
+- Linear Support Vector Classifier
+- Extra Trees
+- Gaussian Naive Bayes
+- Decision Tree
+- AdaBoost
+- Stochastic Gradient Descent
+- Passive Aggressive
 
 ## Prerequisites
 
@@ -93,6 +108,6 @@ This project uses datasets from Kaggle:
 ### Co-Authors of the ML Project
 - Filip Domanski
 - [Oliwer Galaszkiewicz](https://github.com/O-Galaszkiewicz)
-- Arash Ahangar
+- [Arash Ahangar](https://github.com/Arashang)
 
 **Note:** This project is for educational and research purposes. Ensure you comply with Kaggle's terms of service and dataset licenses when using the data.
