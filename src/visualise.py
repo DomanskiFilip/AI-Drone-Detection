@@ -67,7 +67,7 @@ def plot_model_comparison(df: pandas.DataFrame):
         "#FFC0CB",  # Pink
         "#808080",  # Gray
         "#000000",  # Black
-        "#FFFFFF",  # White
+        "#DDDDDD",  # White
         "#FFD700",  # Gold
         "#C0C0C0",  # Silver
         "#8A2BE2"   # Blue Violet
