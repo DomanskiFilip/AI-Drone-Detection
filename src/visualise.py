@@ -49,7 +49,30 @@ def plot_model_comparison(df: pandas.DataFrame):
     )
 
     plt.figure(figsize=(12, 6))
-    seaborn.barplot(data=melted, x="Metric", y="Score", hue="model", palette="Set2")
+    custom_palette = [
+        "#FF0000",  # Red
+        "#00FF00",  # Green
+        "#0000FF",  # Blue
+        "#FFFF00",  # Yellow
+        "#FF00FF",  # Magenta
+        "#00FFFF",  # Cyan
+        "#800000",  # Maroon
+        "#008000",  # Dark Green
+        "#000080",  # Navy
+        "#808000",  # Olive
+        "#800080",  # Purple
+        "#008080",  # Teal
+        "#FFA500",  # Orange
+        "#A52A2A",  # Brown
+        "#FFC0CB",  # Pink
+        "#808080",  # Gray
+        "#000000",  # Black
+        "#FFFFFF",  # White
+        "#FFD700",  # Gold
+        "#C0C0C0",  # Silver
+        "#8A2BE2"   # Blue Violet
+    ]
+    seaborn.barplot(data=melted, x="Metric", y="Score", hue="model", palette=custom_palette)
     plt.title("Latest Run: Model Comparison")
     plt.ylim(0, 105) # Set y-limit to accommodate percentage values
     plt.legend(title="Model")
