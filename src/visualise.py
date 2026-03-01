@@ -36,7 +36,7 @@ def plot_model_comparison(df: pandas.DataFrame):
     # Take the most recent run per model
     latest = df.sort_values("timestamp").groupby("model").last().reset_index()
 
-    # Convert precision, recall, and f1 to percentage for better comparison on the graph
+    # Convert precision, recall, f1, and r2 to percentage for better comparison on the graph
     latest["precision"] = latest["precision"] * 100
     latest["recall"] = latest["recall"] * 100
     latest["f1"] = latest["f1"] * 100
