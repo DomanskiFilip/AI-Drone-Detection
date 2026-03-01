@@ -40,10 +40,11 @@ def plot_model_comparison(df: pandas.DataFrame):
     latest["precision"] = latest["precision"] * 100
     latest["recall"] = latest["recall"] * 100
     latest["f1"] = latest["f1"] * 100
+    latest["r2"] = latest["r2"] * 100
 
     melted = latest.melt(
         id_vars="model",
-        value_vars=["accuracy", "precision", "recall", "f1"],
+        value_vars=["accuracy", "precision", "recall", "f1", "r2"],
         var_name="Metric",
         value_name="Score"
     )
