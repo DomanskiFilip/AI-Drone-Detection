@@ -22,20 +22,34 @@ This project processes and prepares aerial imagery data for classification tasks
 -  Standardized image resizing
 -  Data visualization capabilities
 
-## Classifiers used
+## Classifiers used:
 
+- AdaBoost
+- Decision Tree
 - Euclidean Distance
-- K Nearest Neighbors
-- Multi Layer Perceptron with sigmoid activatrion and stochastic gradient Descrent
-- Logistic Regression
-- Random Forest
-- Linear Support Vector Classifier
 - Extra Trees
 - Gaussian Naive Bayes
-- Decision Tree
-- AdaBoost
-- Stochastic Gradient Descent
-- Passive Aggressive
+- Gradient Boosting
+- K-NN
+- Linear SVC
+- Logistic Regression
+- Multi-Layer Perceptron
+- Passive Aggressive classifier
+- Random Forest
+- sklearns SGDClassifier
+
+## We evaluate the classifiers using:
+
+- Recall – Of all actual positive cases, how many did it correctly detect.
+- Precision – Of all predicted positive cases, how many were actually positive.
+- Accuracy – What fraction of total predictions were correct.
+- F1 Score – What the balance between precision and recall is.
+- R2 – Measure the variance in data explained by the model.
+- RMSE – Measure the root squared error.
+- MAE – Measure the average absolute error.
+- MSE – Measure the average squared error.
+
+## Our results can be found in results.md
 
 ## Prerequisites
 
