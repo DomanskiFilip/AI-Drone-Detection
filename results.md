@@ -6,7 +6,8 @@ Figure 1. Number of objects in each category:
 <img width="1408" height="1056" alt="graph1" src="https://github.com/user-attachments/assets/a135b1c4-e597-4413-af55-8615900ac412" />
 
 Figure 2. Scaterplot visualisation of distribution of objects after normalisation:
-// to be added
+<img width="989" height="690" alt="image" src="https://github.com/user-attachments/assets/fdc27320-b0eb-4e87-9103-5ce298f82c5e" />
+
 
 ## Results visualisation:
 
